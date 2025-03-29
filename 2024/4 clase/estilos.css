@@ -1,0 +1,20 @@
+body{
+    background-color:rgb(220, 87, 87);
+    color: aqua;
+}
+
+h1 {
+    color: rgb(130, 228, 11);
+    background-color: aliceblue;
+    border: 5px solid #000000;
+
+}
+
+.subtitulo {
+    color: black;
+}
+
+.texto-lorem {
+   color:  rgb(130,228,11);
+
+}
