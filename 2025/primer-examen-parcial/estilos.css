@@ -204,16 +204,14 @@ footer {
 footer .row {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 19px;
 }
 
 footer .mini-imgs img {
-    height: 48px;
-    width: 48px;
+    height: 60px;
+    width: 60px;
     object-fit: cover;
     border-radius: 50%;
-    border: 2px solid white; /* opcional: le da un borde fino blanco */
-    filter: brightness(0) invert(1); /* mantenelo si querés que queden blancas */
     opacity: 0.8;
     transition: opacity 0.2s ease;
 }
