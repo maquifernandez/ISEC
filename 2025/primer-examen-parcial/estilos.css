@@ -207,6 +207,20 @@ footer .row {
     gap: 16px;
 }
 
+footer .mini-imgs img {
+    height: 48px;
+    width: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid white; /* opcional: le da un borde fino blanco */
+    filter: brightness(0) invert(1); /* mantenelo si querés que queden blancas */
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+footer .mini-imgs img:hover {
+    opacity: 1;
+}
 footer h4 {
     margin-bottom: 12px;
 }
