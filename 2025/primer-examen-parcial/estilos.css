@@ -198,9 +198,11 @@ footer {
     color: white;
     padding: 32px;
     margin-top: 40px;
+    position: relative;
 }
 
 footer .row {
+    display: flex;
     flex-direction: column;
     gap: 16px;
 }
@@ -216,7 +218,7 @@ footer ul {
 }
 
 footer a {
-    color: teal;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -224,6 +226,24 @@ footer a:hover {
     text-decoration: underline;
 }
 
+footer .social-icons {
+    position: absolute;
+    bottom: 16px;
+    right: 32px;
+    display: flex;
+    gap: 12px;
+}
+
+footer .social-icons img {
+    width: 24px;
+    height: auto;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+footer .social-icons img:hover {
+    transform: scale(1.1);
+}
 
 .btn-subir {
     position: fixed;
