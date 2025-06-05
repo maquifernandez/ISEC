@@ -8,6 +8,61 @@
     scroll-behavior: smooth;
 }
 
+#eventos {
+  padding: 40px 0;
+}
+
+.eventos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 24px auto;
+}
+
+.eventos-header h2 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.ver-todo {
+  font-weight: 600;
+  color: #A76854;
+  text-decoration: none;
+}
+
+.ver-todo:hover {
+  border-bottom: 2px solid teal;
+}
+
+.eventos-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  flex: 1 1 30%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  object-fit: cover;
+  height: 180px;
+}
+
 body {
     background-color: #fff;
     color: #000;
@@ -22,7 +77,7 @@ header {
     background-image: url(imagenes/banner\ prueba.jpg);
     background-size: cover;
     background-position: center;
-    background-color: teal;
+    background-color: #A76854;
 }
 
 header h1 {
@@ -34,13 +89,8 @@ header h1 {
     width: 100%;
     text-align: center;
 }
-/*aca, en CSS, cambiar # por . y en el HTML cambiar el id= por class= con otro nombre que no sea test */
-#test{
-    height: 100%;
-    padding: 0px;
-}
 
-#test ul{
+.links ul{
     height: 100%;
     padding: 0px;
 }
@@ -76,8 +126,6 @@ nav ul li a:hover {
     border-bottom: 2px solid teal;
 }
 
-/* ---------- MAIN / CARDS ---------- */
-
 main {
     width: 90%;
     max-width: 1200px;
@@ -87,8 +135,6 @@ main {
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
-
-/* ---------- SECCIONES ---------- */
 
 section {
     padding: 40px 0;
@@ -112,19 +158,16 @@ p {
     margin-bottom: 16px;
     line-height: 1.6;
 }
-/*
-transformar en una clase que se la implementes al ul de los transportes solamente
-ul { 
+
+.transportes ul{
     margin: 12px 0 24px 20px;
     padding-left: 0;
 }
 
-y esto debería modificar los li de esa clase
-ul li {
-    margin-bottom: 8px;
+.transportes ul li {
+  margin-bottom: 8px;
 }
-*/
-/* ---------- GRID ---------- */
+
 
 .row {
     display: flex;
@@ -144,13 +187,11 @@ ul li {
     object-fit: cover;
 }
 
-/* ---------- TEXTO ---------- */
 
 .text-justify {
     text-align: justify;
 }
 
-/* ---------- FOOTER ---------- */
 
 footer {
     background-color: #A76854;
@@ -183,7 +224,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* ---------- BOTÓN FLOTANTE ---------- */
 
 .btn-subir {
     position: fixed;
