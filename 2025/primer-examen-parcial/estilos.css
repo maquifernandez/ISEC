@@ -403,3 +403,15 @@ footer .social-icons img:hover {
     height: 24px;
   }
 }
+
+@media (max-width: 768px) {
+  nav {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  }
+}
