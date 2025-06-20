@@ -85,7 +85,6 @@ header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
@@ -93,7 +92,6 @@ header h1 {
     font-size: 64px;
     color: white;
     text-shadow: 2px 2px 5px #000;
-    background: rgba(0, 0, 0, 0.5);
     padding: 110px 0;
     width: 100%;
     text-align: center;
