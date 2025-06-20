@@ -71,14 +71,12 @@ body {
 
 header {
     height: 300px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(imagenes/banner\ prueba.jpg);
-    background-size: cover;
-    background-position: center;
-    background-color: #A76854;
+  position: relative;
+  background-image: url(imagenes/banner\ prueba.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #A76854;
+  padding-top: 60px;
 }
 
 header::before {
@@ -105,17 +103,19 @@ header h1 {
 }
 
 nav {
-    background-color: rgba(167, 104, 84, 0.85); /* semi-transparente */
-  backdrop-filter: blur(6px);                /* efecto vidrio */
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);  /* sombra más natural */
+  background-color: rgba(167, 104, 84, 0.85);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   height: 60px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   padding-right: 16px;
-  position: sticky;
+  position: absolute; /* OJO: ya no sticky */
   top: 0;
-  z-index: 1000;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }
 
 nav ul {
